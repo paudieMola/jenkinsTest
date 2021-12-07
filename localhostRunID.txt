@@ -1,5 +1,0 @@
-25695f50-9756-4a0a-b14c-3eff0b698efa
-localhost.run connection id
-
-The key fingerprint is:
-SHA256:3GqdqhxyJvR6rpYjH1SjUNBPBiqx/qJyo1TSD9aKehM helen daly@LAPTOP-PVNG4VLJ
