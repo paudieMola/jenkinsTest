@@ -4,6 +4,6 @@ public class helloWorld
 	{
 		System.out.println("Hello My World");
 		System.out.println("Hello My World Again");
-		System.out.println("Push from github working");
+		System.out.println("Test push to Github");
 	}
 }
