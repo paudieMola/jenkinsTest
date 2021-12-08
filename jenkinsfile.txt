@@ -22,12 +22,14 @@ pipeline {
 // Script //
 node {
     stage('Build') {
-        echo 'Building....'
+        echo 'Node Building'
+		bat 'javac helloWorld.java'
+		bat 'java helloWorld'
     }
     stage('Test') {
-        echo 'Building....'
+        echo 'Node testing'
     }
     stage('Deploy') {
-        echo 'Deploying....'
+        echo 'Node Deploying'
     }
 }
