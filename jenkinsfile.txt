@@ -1,29 +1,33 @@
 pipeline {
-	agent any
-	stages {
-		stage("build"){
-			steps {
-				echo 'building the application'
-				sh 'javac helloWorld.java'
-				sh 'java helloWorld'
-			}
-		}
-		stage("test"){
-			steps {
-				echo 'testing the application'
-			}
-		}
-		stage("deploy"){
-			steps {
-				echo 'deploying the application'
-			}
-		}
-	
-	}
-	post {
-        always {
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
-            junit 'build/reports/**/*.xml'
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
+// Script //
+node {
+    stage('Build') {
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
     }
 }
