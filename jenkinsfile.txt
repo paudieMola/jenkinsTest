@@ -24,10 +24,11 @@ node {
     stage('Build') {
         echo 'Node Building'
 		bat 'javac helloWorld.java'
-		bat 'java helloWorld'
     }
     stage('Test') {
         echo 'Node testing'
+		bat 'java helloWorld'
+		bat 'python helloworld.py'
     }
     stage('Deploy') {
         echo 'Node Deploying'
