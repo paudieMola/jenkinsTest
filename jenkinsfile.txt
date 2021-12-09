@@ -29,11 +29,6 @@ node {
         echo 'Node testing'
 		bat 'java helloWorld'
 		bat 'python helloworld.py'
-		if (fileExists('file')) {
-			echo 'Python File exists'
-		} else {
-			echo 'No python file exists'
-		}
     }
     stage('Deploy') {
         echo 'Node Deploying'
