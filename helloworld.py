@@ -5,4 +5,5 @@ def helloworld():
 	print('Hello Python World')
 	print('helloworld.txt file created')
 
-helloworld()
+if __name__ == '__main__':
+    helloworld()
